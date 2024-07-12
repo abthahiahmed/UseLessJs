@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Data From API</title>
+
+    <style>
+        .posts{
+            max-width: 400px;
+            padding: 10px;
+        }
+        .posts .post{
+            display: flex;
+            background-color: white;
+            box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.2);
+            margin: 10px auto;
+            padding: 0.5rem;
+            border-radius: 0.6rem;
+            gap: 10px;
+        }
+        input{
+            outline: none;
+        }
+        .valid{
+            border: 1px solid green;
+        }
+        .invalid{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="posts">
+        <fetch-data src="https://api.thecatapi.com/v1/images/search?limit=4&breed_ids=beng&api_key=REPLACE_ME">
+            <div class="post">
+                <img src="{url}" width="100" height="100">
+                <h3>{id}</h3>
+            </div>
+        </fetch-data>
+    </div>
+    
+    <script src="/lib/useless.js" type="module"></script>
+    
+</body>
+</html>

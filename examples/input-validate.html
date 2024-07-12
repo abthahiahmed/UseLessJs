@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Validator</title>
+
+    <style>
+        input{
+            outline: none;
+        }
+        .valid{
+            border: 1px solid green;
+        }
+        .invalid{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <input-validate valid="valid" invalid="invalid" regex="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+        <input type="text" placeholder="Enter something...."/>
+    </input-validate>
+    <script>
+
+        function myfunc(response){
+            console.log(response)
+        }
+
+    </script>
+    
+    <script src="/lib/useless.js" type="module"></script>
+    
+</body>
+</html>
