@@ -8,11 +8,17 @@
 </head>
 <body>
 
-    <send-data url="http://localhost:9000/test-submit" method="post" data-number="1" response="myfunc">
+    <send-data url="http://localhost:9000/test-submit" method="post" 
+        data-number="1" response="getResponse">
         <button>Send Data</button>
     </send-data>
     
     <script src="/lib/useless.js" type="module"></script>
     
+    <script>
+        function getResponse(response){
+            console.log(response)
+        }
+    </script>
 </body>
 </html>

@@ -19,21 +19,14 @@
             border-radius: 0.6rem;
             gap: 10px;
         }
-        input{
-            outline: none;
-        }
-        .valid{
-            border: 1px solid green;
-        }
-        .invalid{
-            border: 1px solid red;
-        }
     </style>
 </head>
 <body>
 
     <div class="posts">
-        <fetch-data src="https://api.thecatapi.com/v1/images/search?limit=4&breed_ids=beng&api_key=REPLACE_ME">
+        <h1>Data from API!!!</h1>
+        <fetch-data src="https://api.thecatapi.com/v1/images/search" 
+            data-limit="4" data-breed_ids="beng" data-api_key="REPLACE_ME">
             <div class="post">
                 <img src="{url}" width="100" height="100">
                 <h3>{id}</h3>
