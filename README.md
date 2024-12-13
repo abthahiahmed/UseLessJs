@@ -22,7 +22,7 @@ To implement UseLessJs to you project you need to link your script tag as module
 
 ## Currently this library has 6 special elements. 
 
-### <form-submit></form-submit> 
+### ```<form-submit></form-submit>``` 
 This element helps you to submit form data to backend without refresh and JavaScript. This only support GET & POST Requests. Here an example below : 
 
 ```html
@@ -41,7 +41,7 @@ This element helps you to submit form data to backend without refresh and JavaSc
 </script>
 ```
 
-### <fetch-data><fetch-data>
+### ```<fetch-data><fetch-data>```
 This element helps you to fetch data like posts from backend server without any JavaScript.
 
 ```html
@@ -55,7 +55,7 @@ This element helps you to fetch data like posts from backend server without any 
 <!-- use {property_name} literal to show the JSON object property -->
 ```
 
-### <send-data></send-data>
+### ```<send-data></send-data>```
 If you need to send data on button click this element will help you to do it without JavaScript. An example below:
 
 ```html
@@ -65,7 +65,7 @@ If you need to send data on button click this element will help you to do it wit
 </send-data>
 ```
 
-### <count-num></count-num>
+### ```<count-num></count-num>```
 You can create counter without any JavaScript. An Example : 
 
 ```html
@@ -76,7 +76,7 @@ You can create counter without any JavaScript. An Example :
 </count-num>
 ```
 
-### <input-validate></input-validate>
+### ```<input-validate></input-validate>```
 To validate your input data you can use the this element. You can validate input value with Regular Expressions. An Example below : 
 
 ```html
@@ -86,10 +86,18 @@ To validate your input data you can use the this element. You can validate input
 </input-validate>
 ```
 
-### <load-script></load-script>
+### ```<load-script></load-script>```
 To load script file after page load this element helps you. It's possible to set a delay to load the script on document.
 
 ```html
 <!-- Simply set your src to load js. And set after attribute to specify delay -->
 <load-script after="5000" src="/path/to/script.js"></load-script>
 ```
+
+### ```<load-image></load-image>```
+This is a new feature on UseLessJS to load images efficiently. This feature has built in skeleton loading feature. Sekeleton loading will be shown until the image load.
+```html
+<load-image src="/images/img-1.jpg" width="340" height="220"></load-image>
+```
+
+
